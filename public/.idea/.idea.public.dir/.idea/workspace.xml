@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3a6b0fdc-5405-4cbd-84ca-eb9b4ca235f6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.public.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.public.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/build.data.br" beforeDir="false" afterPath="$PROJECT_DIR$/Build/build.data.br" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/build.framework.js.br" beforeDir="false" afterPath="$PROJECT_DIR$/Build/build.framework.js.br" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/build.wasm.br" beforeDir="false" afterPath="$PROJECT_DIR$/Build/build.wasm.br" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../../../../UnityProjects/Clicker/Assets/Scripts/GameController.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2igbQe4jsWJaNZXWPLbKMDJRIp3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\Владимир\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\Владимир\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\Владимир\\AppData\\Local\\Symbols\\src&quot;
+    ]
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3a6b0fdc-5405-4cbd-84ca-eb9b4ca235f6" name="Changes" comment="" />
+      <created>1719915155005</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1719915155005</updated>
+      <workItem from="1719915158199" duration="4362000" />
+      <workItem from="1719922816318" duration="1041000" />
+      <workItem from="1720002136410" duration="2855000" />
+      <workItem from="1720217602748" duration="311000" />
+      <workItem from="1720267029789" duration="1762000" />
+      <workItem from="1720270027819" duration="2372000" />
+      <workItem from="1720746088622" duration="454000" />
+      <workItem from="1720746609786" duration="45000" />
+      <workItem from="1720746705622" duration="36000" />
+      <workItem from="1720746796865" duration="634000" />
+      <workItem from="1720873194698" duration="482000" />
+      <workItem from="1720873704602" duration="3073000" />
+      <workItem from="1721860384053" duration="3508000" />
+      <workItem from="1721920234690" duration="6847000" />
+      <workItem from="1721983262968" duration="1235000" />
+      <workItem from="1721984584607" duration="1230000" />
+      <workItem from="1721992046681" duration="8456000" />
+      <workItem from="1722111982787" duration="870000" />
+      <workItem from="1722114742402" duration="7915000" />
+      <workItem from="1722279537310" duration="1229000" />
+      <workItem from="1722281077132" duration="1771000" />
+      <workItem from="1722288969001" duration="5260000" />
+      <workItem from="1722454217827" duration="1819000" />
+      <workItem from="1722470071673" duration="1521000" />
+      <workItem from="1722635831123" duration="9427000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

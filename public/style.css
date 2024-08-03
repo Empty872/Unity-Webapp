@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 0;
+    text-align: center; /* Центрирование текста на всей странице */
+}
+
+.container {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    text-align: center; /* Центрирование текста внутри контейнера */
+}
+
+h1 {
+    color: #333;
+}
+
+.stats-container, .actions-container {
+    width: 100%;
+    margin-top: 20px;
+    text-align: left; /* Выровнять текст по левому краю */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto; /* Центрирование таблиц */
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f9f9f9;
+}
+
+.status {
+    color: red;
+}
+
+#start-game-panel {
+    margin: 20px 0;
+}
+
+#start-game-button, #end-turn-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#start-game-button:hover, #end-turn-button:hover {
+    background-color: #45a049;
+}
+
+#start-game-button:disabled, #end-turn-button:disabled {
+    background-color: #888; 
+    cursor: not-allowed; 
+}
+
+#turn, #win-panel, #defeat-panel {
+    font-size: 18px;
+    margin: 10px 0;
+}
+

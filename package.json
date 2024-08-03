@@ -1,0 +1,16 @@
+{
+  "name": "my-webapp",
+  "version": "1.0.0",
+  "description": "Web application with Unity WebGL integration",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-static-gzip": "^2.0.6",
+    "https-localhost": "^4.6.5"
+  },
+  "author": "",
+  "license": "ISC"
+}

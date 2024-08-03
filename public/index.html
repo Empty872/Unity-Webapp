@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turn-based Strategy Game</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="Build/build.loader.js"></script>
+</head>
+<body>
+<h1>Turn-based Strategy Game</h1>
+<div class="container">
+    <div id="unity-container" class="unity-container">
+        <canvas id="unity-canvas" width="960" height="600" tabindex="-1"></canvas>
+        <div id="unity-loading-bar">
+            <div id="unity-logo"></div>
+            <div id="unity-progress-bar-empty">
+                <div id="unity-progress-bar-full"></div>
+            </div>
+        </div>
+        <div id="unity-warning"></div>
+        <div id="unity-footer">
+            <div id="unity-webgl-logo"></div>
+            <div id="unity-fullscreen-button"></div>
+            <div id="unity-build-title"></div>
+        </div>
+    </div>
+    <div style="height: 510px"></div>
+    <div id="start-game-panel">
+        <button id="start-game-button">Start Game</button>
+    </div>
+    <div id="defeat-panel" hidden="">
+        К сожалению, вы проиграли.
+    </div>
+    <div id="win-panel" hidden="">
+        Поздравляем с победой.
+    </div>
+    <div id="battle-scene-panel" hidden>
+        <div>
+            <p id="turn">Turn: 1</p>
+            <button id="end-turn-button">End Turn</button>
+        </div>
+        <div class="stats-container">
+            <table id="playerTable">
+                <thead>
+                <tr>
+                    <th>Вы</th>
+                    <th>Оппонент</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="actions-container">
+            <table id="actionsTable">
+                <thead>
+                <tr>
+                    <th>Действия</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+</div>
+<script>
+    var unityInstance;
+
+    document.addEventListener("DOMContentLoaded", function () {
+        var container = document.querySelector("#unity-container");
+        var canvas = document.querySelector("#unity-canvas");
+        var loadingBar = document.querySelector("#unity-loading-bar");
+        var progressBarFull = document.querySelector("#unity-progress-bar-full");
+        var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+        var warningBanner = document.querySelector("#unity-warning");
+
+        function unityShowBanner(msg, type) {
+            function updateBannerVisibility() {
+                warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
+            }
+
+            var div = document.createElement('div');
+            div.innerHTML = msg;
+            warningBanner.appendChild(div);
+            if (type === 'error') div.style = 'background: red; padding: 10px;';
+            else {
+                if (type === 'warning') div.style = 'background: yellow; padding: 10px;';
+                setTimeout(function () {
+                    warningBanner.removeChild(div);
+                    updateBannerVisibility();
+                }, 5000);
+            }
+            updateBannerVisibility();
+        }
+
+        var buildUrl = "Build";
+        var loaderUrl = buildUrl + "/build.loader.js";
+        var config = {
+            dataUrl: buildUrl + "/build.data.br",
+            frameworkUrl: buildUrl + "/build.framework.js.br",
+            codeUrl: buildUrl + "/build.wasm.br",
+            streamingAssetsUrl: "StreamingAssets",
+            companyName: "DefaultCompany",
+            productName: "Strategy Game",
+            productVersion: "1.0",
+            showBanner: unityShowBanner,
+        };
+
+        if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+            var meta = document.createElement('meta');
+            meta.name = 'viewport';
+            meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+            document.getElementsByTagName('head')[0].appendChild(meta);
+            container.className = "unity-mobile";
+            canvas.className = "unity-mobile";
+        } else {
+            canvas.style.width = "960px";
+            canvas.style.height = "500px";
+            canvas.style.marginLeft = "auto";
+            canvas.style.marginRight = "auto";
+        }
+
+        loadingBar.style.display = "block";
+
+        var script = document.createElement("script");
+        script.src = loaderUrl;
+        script.onload = () => {
+            createUnityInstance(canvas, config, (progress) => {
+                progressBarFull.style.width = 100 * progress + "%";
+            }).then((instance) => {
+                loadingBar.style.display = "none";
+                fullscreenButton.onclick = () => {
+                    instance.SetFullscreen(1);
+                };
+                unityInstance = instance; // Make unityInstance globally available
+            }).catch((message) => {
+                alert(message);
+            });
+        };
+        document.body.appendChild(script);
+    });
+</script>
+<!--<button id="progressButton" disabled>Check Progress</button>-->
+<script src="script.js"></script>
+</body>
+</html>
